@@ -1,0 +1,193 @@
+/* Bootstrap override */
+
+
+@media screen and (max-width: 1000px) {
+    #container {
+        display: block;
+
+    }
+
+    #avatar {
+        margin: 2rem;
+        margin-left: 5rem;
+        width: 100%;
+    }
+
+    #about {
+        margin: 10rem;
+
+    }
+
+    .gallery, .gallery1 {
+        width: 1100px;
+        display: block;
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #container {
+        display: grid;
+        grid-template-columns: auto auto;
+
+    }
+
+    #avatar {
+        margin-right: 7rem;
+    }
+
+    #about {
+        margin-left: 9rem;
+        width: 50%;
+    }
+
+    .gallery, .gallery1 {
+        width: 1100px;
+        display: flex;
+        overflow-x: scroll;
+    }
+}
+
+
+
+.container {
+
+    padding: 0;
+}
+
+body {
+    background-image: url("../assets/Untitled-1.png");
+
+}
+
+nav {
+    font-size: 25px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+
+}
+
+nav.scrolled {
+    background-color: #180328;
+  }
+
+nav li {
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#container{
+    margin-top: 6rem;
+}
+#about {
+    color: #D0DAE4;
+    padding-top: 10%;
+    text-align: left;
+}
+
+#about h1 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 45px;
+}
+
+#about p {
+    color: #D0DAE4;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+#CV {
+    background-color: blueviolet;
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+
+.projects h1, .projects1 h1 {
+
+    margin-left: 45% !important;
+    margin-top: 250px;
+    color: #D0DAE4;
+    text-shadow:
+        0 0 7px #D0DAE4,
+        0 0 10px #D0DAE4,
+        0 0 21px #D0DAE4,
+        0 0 42px blueviolet,
+        0 0 82px blueviolet,
+        0 0 92px blueviolet,
+        0 0 102px blueviolet,
+        0 0 151px blueviolet;
+
+}
+
+
+
+.gallery::-webkit-scrollbar, .gallery1::-webkit-scrollbar {
+    display: none;
+}
+
+
+.gallery div, .gallery1 div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+
+}
+
+.gallery div img, .gallery1 div img {
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.gallery-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4% auto;
+}
+
+.gallery p, .gallery1 p {
+    color: white;
+}
+
+#backbtn,
+#nextbtn,
+#backbtn1,
+#nextbtn1
+{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+
+}
+
+.gallery div img:hover, .gallery1 div img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
